@@ -1,0 +1,1 @@
+# Khayyam-pascal-triangle
