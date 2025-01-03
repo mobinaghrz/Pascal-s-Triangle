@@ -32,5 +32,21 @@ else:
         counter+=1
         Pointer1 += 1
 
-    print(LinearHolder_L)
 
+# Printing the triangle
+
+index = 0
+str_l = []
+
+for i in range (1,ExcpectedLine+1):
+    m = LinearHolder_L[:i]
+    LinearHolder_L = LinearHolder_L[i:EndLen]
+
+    m = ' '.join(map(str, m))
+    str_l.append(m)
+
+
+while ExcpectedLine > 0 :
+  print(" "*ExcpectedLine,str_l[index])
+  ExcpectedLine -= 1
+  index += 1
