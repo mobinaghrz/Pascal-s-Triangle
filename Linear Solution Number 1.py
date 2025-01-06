@@ -1,33 +1,11 @@
-n = int(input())
-a = 0
-p=0
-m = [1]
+import math
 
-while a<=n:
+# for nth line of the triangle
+ExcpectedLine = int(input("Please Enter the Expected Line Number:"))
 
-    if a == 1:print(1)
+final = ''
 
-    elif a == 2:
-        print(1,1)
-    a+=1
-    print(a)
-
-
-m[n-1]=1
-
-print(m)   
-
-n =int(input())
-m = []
-counter = 3
-
-# if n <= 2 : 
-#     m.append(1) 
-# if n == 2:
-#     m.append(1)
-#     m.append(1)
-
-# for 
-
-
-print (m)
+for choise in range(0,ExcpectedLine+1):
+    final += ' ' + str(int(math.factorial(ExcpectedLine)/(math.factorial(choise)*(math.factorial(ExcpectedLine - choise)))))
+    
+print(final)
