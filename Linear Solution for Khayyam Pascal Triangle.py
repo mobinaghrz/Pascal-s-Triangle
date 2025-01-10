@@ -2,11 +2,10 @@ ExcpectedLine = int(input("Please Enter the Expected Line Number:"))
 LinearHolder_L = []
 
 if ExcpectedLine == 1:
-    LinearHolder_L.append(1)
-    print(LinearHolder_L)
+    print(1)
 
 elif ExcpectedLine == 2:
-    print(LinearHolder_L)
+    print(' 1 \n1 1' )
 
 else:
 
@@ -34,19 +33,19 @@ else:
 
 
 # Printing the triangle
+if ExcpectedLine > 2:
+    index = 0
+    str_l = []
 
-index = 0
-str_l = []
+    for i in range (1,ExcpectedLine+1):
+        m = LinearHolder_L[:i]
+        LinearHolder_L = LinearHolder_L[i:EndLen]
 
-for i in range (1,ExcpectedLine+1):
-    m = LinearHolder_L[:i]
-    LinearHolder_L = LinearHolder_L[i:EndLen]
-
-    m = ' '.join(map(str, m))
-    str_l.append(m)
+        m = ' '.join(map(str, m))
+        str_l.append(m)
 
 
-while ExcpectedLine > 0 :
-  print(" "*ExcpectedLine,str_l[index])
-  ExcpectedLine -= 1
-  index += 1
+    while ExcpectedLine > 0 :
+        print(" "*ExcpectedLine,str_l[index])
+        ExcpectedLine -= 1
+        index += 1
