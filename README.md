@@ -6,6 +6,7 @@ then for the rest we put a pointer that sum the two up numbers and put it in the
 Linear Solution for Khayyam Pascal Triangle.py
  The algorithem in this file is to put the whole lines before in a linear list and calculate the whole triangle in a list, and afterward print it in a triangle
 
+
  Nth line of the pascal triangle.py
  it goase with formula of :
  for N th line :
